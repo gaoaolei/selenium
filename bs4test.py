@@ -1,13 +1,15 @@
+from bs4 import BeautifulSoup
 with open(r'D:\selenium\html\第二次课\bs1.html', encoding='utf8') as f:
     html_doc = f.read()
-from bs4 import BeautifulSoup
 # 指定html5lib来解析文档
 doc = BeautifulSoup(html_doc, 'html5lib')
+print(type(doc))
 print(doc)
 print('---------------')
 print(doc.find('title'))
 print(doc.title)
-type(doc.title)
+print(type(doc.title))
+print("==========")
 print(doc.title.name)
 print(doc.title.text)
 print(doc.title.string)
@@ -23,7 +25,7 @@ print(doc.div.get_text())
 print(doc.div['id'])   # 获取元素的属性
 print('-------------2---------------')
 print(doc.div.parent)  # 获取元素的父元素
-print('-0---------------3-----------')
+print('----------------3-----------')
 print(doc.p['style'])       # 获取元素的属性
 print(doc.p['class'])
 print(doc.p.get('class'))
