@@ -1,0 +1,1 @@
+下载和chrome浏览器相同版本的chromdriver.exe,直接放到Python目录下即可（因为Python目录添加了环境变量，不需要放到别处还得添加driver的环境变量）
