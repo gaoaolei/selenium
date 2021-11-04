@@ -16,4 +16,4 @@ for handle in all_Windows:
         break
 a = driver.current_window_handle
 print(a)
-print(driver.current_url)   # 打印当前标签页的url
+print(driver.current_url)   # 打印当前标签页的url   asdf
