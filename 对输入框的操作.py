@@ -5,7 +5,7 @@
 3.对单选框的进行选择          a.click()  这样就选中了a选项
 4.对勾选框的操作
 判断是否被选中             a.is_selected()       返回为boolean
-例子：    flag = a.selected()
+例子：    flag = a.is_selected()
          if flag:
                 print('a is already selected')
          else:
