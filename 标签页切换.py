@@ -3,6 +3,8 @@ import time
 
 driver = webdriver.Chrome()
 driver.get("http://www.baidu.com")
+
+# 打开一个新标签页
 driver.execute_script("window.open('https://www.wtzw.com')")     # 需借助前端代码开启新的标签页，但是要注意handle还在第一个上
 current_window = driver.current_window_handle
 print(current_window)
@@ -24,6 +26,3 @@ driver.close()
 time.sleep(1)
 driver.quit()
 
-
-# ceshiasdfafd
-# ceshiasdfafdasdfasdfasdfadsf

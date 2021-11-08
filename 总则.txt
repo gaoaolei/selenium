@@ -1,0 +1,47 @@
+下载和chrome浏览器相同版本的chromdriver.exe,直接放到Python目录下即可（因为Python目录添加了环境变量，不需要放到别处还得添加driver的环境变量）
+
+一、html解释：
+标签是div，p这种
+元素是有尖括号加标签，成对出现的一行或一块内容   起始标签和结束标签   <p style='xxx'>yyy</p>
+元素的属性就是键值对组成的，style
+元素的内容   yyy
+
+二、常用方法      看webdriver.py和webelement.py即可
+打开浏览器  	    d=webdriver.Chrome()
+关闭浏览器		d.quit()
+窗口最大化  	    d.maximize_window()
+打开一个页面  	    d.get(url)
+打开一个新页面     d.excute_script("window.open(url)")
+关闭页面		    d.close()
+当前页面的句柄	    d.current_window_handle
+所有页面的句柄	    d.window_handles
+切到其他页面	    d.switch_to.window(handle_name)
+浏览器名字		print(driver.name)
+？？？？？		print(driver.mobile)
+当前页面的名字 	print(driver.title)
+当前页面的url	    print(driver.current_url)
+当前页面的源码 	print(driver.page_source)
+切到其他frame  	d.switch_to.frame()
+切到告警弹窗 	    d.switch_to_alert()
+确认弹窗  		alert.accept()
+取消弹窗  		alert.dismiss()
+标签页前进		d.forward()
+标签页后退		d.back()
+标签页刷新		d.refresh()
+
+
+输入			    ele.send_keys()
+点击			    ele.click()
+清除			    ele.clear()
+获取属性		    ele.get_attribute()
+                ele.get_attribute('href'))
+                ele.get_attribute('style')
+                ele.get_attribute('outerHTML')
+                ele.get_attribute('innerHTML')
+元素是否被选中	    ele.is_selected()
+提交			    ele.submit()
+元素再定位元素		ele.find_element(s)_by_xxx()
+元素标签名		ele.tag_name
+元素文案		    ele.text
+元素大小		    ele.size
+
