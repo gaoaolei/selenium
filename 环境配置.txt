@@ -1,1 +1,39 @@
 下载和chrome浏览器相同版本的chromdriver.exe,直接放到Python目录下即可（因为Python目录添加了环境变量，不需要放到别处还得添加driver的环境变量）
+
+一、html解释：
+标签是div，p这种
+元素是有尖括号加标签，成对出现的一行或一块内容   起始标签和结束标签   <p style='xxx'>yyy</p>
+元素的属性就是键值对组成的，style
+元素的内容   yyy
+
+二、driver的属性和方法
+driver = webdriver.Chrome()
+属性：
+print(driver.name)
+print(driver.mobile)
+print(driver.title)
+print(driver.current_url)
+print(driver.page_source)
+print(driver.current_window_handle)
+print(driver.window_handles)
+方法：
+driver.find_element_by_name()等
+driver.maximize_window()等
+driver.switch_to.
+
+
+三、获取元素的属性和方法   webelement.py
+固有属性
+ele.tag_name
+ele.text
+ele.size
+ele.parent
+ele.id
+html内属性：
+ele.get_attribute(属性名字)
+方法：
+ele.click()
+ele.submit()
+ele.clear()
+ele.find_element_by_name()
+...

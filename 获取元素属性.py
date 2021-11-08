@@ -1,4 +1,4 @@
-'''获取元素属性get_attribute('属性名称')
+'''获取元素的属性get_attribute('属性名称')
 get_attribute('href')
 get_attribute('style')
 get_attribute('innerHTML')
