@@ -1,6 +1,6 @@
 '''隐式等待
 driver.implicitly_wait(10)  对元素每半秒钟查找一次，直至找到，若超过10s仍未找到，抛出异常,不需导入time
-
+只需声明一次
 '''
 # from selenium import webdriver
 # driver = webdriver.Chrome()   # 创建webdriver实例对象
@@ -28,4 +28,10 @@ WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'kw')), '
 print(driver.find_element_by_id('su').get_attribute('value'))
 #  为什么把等待时间设置很短，依旧不会超时
 #  还有很多用法，可点击EC查看
+# wait.py文件
+# WebDriverWait(object):
+#     def __init__(self, driver, timeout, poll_frequency=POLL_FREQUENCY, ignored_exceptions=None):
+#     def until(self, method, message=''):
 
+w = WebDriverWait(driver,5,0.4)
+w.until()
